@@ -1,9 +1,15 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import Serviceimage from "../images/service.jpg"
 
 const Service = () => {
   return (
     <div>
-      <h1>This is Service Page</h1>
+      <Navbar/>
+      <Hero
+      cName="hero-about"heroImg={Serviceimage}tittle="Service" btnClass="hide"
+      />
     </div>
   )
 }

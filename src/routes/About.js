@@ -1,9 +1,15 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import Aboutimage from "../images/about.jpg"
 
 const About = () => {
   return (
     <div>
-      <h1>This is About page</h1>
+      <Navbar/>
+      <Hero
+      cName="hero-about"heroImg={Aboutimage}tittle="About" btnClass="hide"
+      />
     </div>
   )
 }
