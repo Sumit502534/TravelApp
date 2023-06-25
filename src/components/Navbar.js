@@ -3,14 +3,24 @@ import { MenuItems } from './MenuItems'
 import "../style/NavbarStyle.css"
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SignUp from './SignUp'
+import {
+  Routes,
+  Route,
+  // Link
+} from "react-router-dom";
 
 const Navbar = () => {
 
-    const [clicked, setclicked] = useState(false);
-
-    const handleClick = () =>{
-        setclicked(!clicked);
-    }
+  const signClick = () =>{
+    <Routes>
+      <Route path="/signup"element={<SignUp/>} />
+    </Routes>
+  }
+  const [clicked, setclicked] = useState(false);
+  const handleClick = () =>{
+      setclicked(!clicked);
+  }
 
   return (
     <nav className='NavbarItems'>
@@ -30,7 +40,9 @@ const Navbar = () => {
                 </li>
             );
         })}
-        <button>Sign Up</button>
+        <Link to="/signup">
+          <button onClick={signClick}>Sign Up</button>
+        </Link>
       </ul>
     </nav>
   )

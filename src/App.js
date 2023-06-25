@@ -3,6 +3,8 @@ import About from './routes/About';
 import Home from './routes/Home';
 import Service from './routes/Service';
 import Contact from './routes/Contact';
+import SignUp from './components/SignUp';
+
 import {
   BrowserRouter as Router,
   Routes,
