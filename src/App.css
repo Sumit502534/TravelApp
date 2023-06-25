@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@300&display=swap');
+
 .App {
   text-align: center;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
